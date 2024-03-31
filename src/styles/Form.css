@@ -1,0 +1,66 @@
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру */
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Выравнивание элементов по вертикали */
+    width: 100%;
+    height: auto; /* Высота автоматически подстраивается под содержимое */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.form-input-title,
+.form-input-timer {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin-right: 10px; /* Отступ между полями формы */
+}
+
+.label-title,
+.label-timer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 5px; /* Отступ снизу */
+}
+
+.input-title,
+.input-timer {
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px; /* Внутренние отступы */
+}
+
+.input-title:hover,
+.input-timer:hover,
+.btn-form:hover {
+    background-color: rgb(241, 238, 238);
+    border: 2px solid grey;
+}
+
+.btn-form {
+    width: 130px;
+    height: 40px;
+    border: 1px solid #3d6385;
+    background-color: #acd2f4;
+    margin-top: 15px;
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+.btn-form:hover {
+    background-color: #3d6385;
+    color: white;
+}
+
+.watch-items-wrapper {
+    min-width: 750px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+    align-items: center; /* Выравнивание по центру по вертикали */
+}

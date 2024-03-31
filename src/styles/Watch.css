@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.watch-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 140px;
+}
+
+.clock-wrapper {
+    margin-right: 30px;
+}
+
+.clock {
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../image/clock-face.png');
+    background-size: cover;
+    border-radius: 50%;
+    -webkit-box-shadow: -8px 11px 11px 2px #000000;
+    box-shadow: -8px 11px 11px 2px #000000;
+}
+
+.clock:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #000000;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.clock-btn {
+    height: 25px;
+    width: 25px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #acd2f4;
+}
+
+.clock-btn:hover {
+    border: none;
+    color: white;
+    background-color: #3d6385;
+}
+
+.title {
+    min-width: 90px;
+}
+
+.clock .hour,
+.clock .minutes,
+.clock .seconds {
+    position: absolute;
+}
+
+.clock .hour .hour-hand {
+    width: 70px;
+    height: 70px;
+}
+
+.clock .minutes .minute-hand {
+    width: 90px;
+    height: 90px;
+}
+
+.clock .seconds .second-hand {
+    width: 120px;
+    height: 120px;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hour-hand:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    background-color: #162431;
+    z-index: 10;
+    border-radius: 3px 3px 0 0;
+}
+
+.minute-hand:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 60px;
+    background-color: #376086;
+    z-index: 11;
+    border-radius: 3px 3px 0 0;
+}
+
+.second-hand:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 65px;
+    background-color: red;
+    z-index: 12;
+    border-radius: 3px 3px 0 0;
+}
